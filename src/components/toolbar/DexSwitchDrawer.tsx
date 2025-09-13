@@ -7,7 +7,7 @@ import { useRouteNavigator } from '@/stores/useRouterStore'
 import GameIndicator from '../GameIndicator'
 import GameSelectField from '../GameSelectField'
 import PokedexSelectField from '../PokedexSelectField'
-import DrawerMenu, { DrawerMenuProps } from '../primitives/DrawerMenu'
+import DrawerMenu, { type DrawerMenuProps } from '../primitives/DrawerMenu'
 import styles from './DexSwitchDrawer.module.scss'
 
 export default function DexSwitchDrawer({ className, children, ...props }: DrawerMenuProps) {

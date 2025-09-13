@@ -7,7 +7,7 @@ import { useState } from 'react'
 import GameSelectField from '../GameSelectField'
 import PokedexSelectField from '../PokedexSelectField'
 import Btn from '../primitives/Btn'
-import DrawerMenu, { DrawerMenuProps } from '../primitives/DrawerMenu'
+import DrawerMenu, { type DrawerMenuProps } from '../primitives/DrawerMenu'
 import styles from './DexSwitchDrawer.module.scss'
 
 export default function HomeDexSwitchDrawer({ className, children, ...props }: DrawerMenuProps) {

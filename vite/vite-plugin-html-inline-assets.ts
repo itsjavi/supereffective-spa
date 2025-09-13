@@ -1,5 +1,5 @@
-import { OutputAsset, OutputOptions } from 'rollup'
-import { Plugin, UserConfig } from 'vite'
+import type { OutputAsset, OutputOptions } from 'rollup'
+import type { Plugin, UserConfig } from 'vite'
 
 // Code originally from richardtallent/vite-plugin-singlefile, simplified, safer, and adapted to our needs.
 

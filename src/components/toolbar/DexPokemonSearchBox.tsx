@@ -1,6 +1,6 @@
-import { DexTrackerOptionsState } from '@/stores/types/state'
+import type { DexTrackerOptionsState } from '@/stores/types/state'
 import useDexTrackerStore from '@/stores/useDexTrackerStore'
-import DebouncedSearchBox, { DebouncedSearchBoxProps } from '../primitives/DebouncedSearchBox'
+import DebouncedSearchBox, { type DebouncedSearchBoxProps } from '../primitives/DebouncedSearchBox'
 
 export default function DexPokemonSearchBox(props: DebouncedSearchBoxProps) {
   const store = useDexTrackerStore((store) => store)

@@ -1,6 +1,6 @@
 import { useLocalDatasetQuery } from '@/hooks/useLocalDatasetQuery'
-import { TrPokedex } from '@/lib/dataset/types'
-import { CurrentDexState, PokedexState } from './types/state'
+import type { TrPokedex } from '@/lib/dataset/types'
+import type { CurrentDexState, PokedexState } from './types/state'
 import { useDexTrackerStore } from './useDexTrackerStore'
 import { getDexAndGameData } from './utils'
 

@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@parcel/watcher'
+  - '@swc/core'
+  - esbuild
+  - puppeteer
+  - sharp

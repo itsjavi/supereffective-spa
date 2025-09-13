@@ -1,6 +1,6 @@
-import { RouterLink } from '@/lib/router'
+import type { RouterLink } from '@/lib/router'
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef, ComponentType, ElementType } from 'react'
+import type { ComponentPropsWithoutRef, ComponentType, ElementType } from 'react'
 import styles from './Btn.module.scss'
 
 type BtnProps<T extends ElementType> = {

@@ -1,4 +1,4 @@
-import { TrPokedex } from '@/lib/dataset/types'
+import type { TrPokedex } from '@/lib/dataset/types'
 import { useCurrentDexData } from '@/stores/useCurrentDexData'
 import { useLocalDatasetQuery } from './useLocalDatasetQuery'
 

@@ -1,4 +1,4 @@
-import { AppRouter } from './appRouterClass'
+import type { AppRouter } from './appRouterClass'
 import type { PageComponent, PageComponentProps, RouterPageModule, RouterPageModuleRouteMap } from './types'
 
 export function initializeRouter(

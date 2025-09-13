@@ -1,4 +1,4 @@
-import { Plugin } from 'vite'
+import type { Plugin } from 'vite'
 import { replaceVars } from './plugin-utils/replace-vars'
 // import dataJson from '../src/data.json'
 

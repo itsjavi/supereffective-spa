@@ -5,7 +5,7 @@ import WelcomeBanner from '@/components/home/WelcomeBanner'
 import HomeDexSwitchDrawer from '@/components/toolbar/HomeDexSwitchDrawer'
 import SettingsDrawer from '@/components/toolbar/SettingsDrawer'
 import TrackFormsAction from '@/components/toolbar/actions/TrackFormsAction'
-import { PageComponent } from '@/lib/router/types'
+import type { PageComponent } from '@/lib/router/types'
 
 const HomePage: PageComponent<'id' | 'foo'> = ({ routeParams: _, ...rest }) => {
   return (

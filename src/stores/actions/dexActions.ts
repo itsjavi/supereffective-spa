@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import { DexTrackerActionFactory, DexTrackerDexActions } from '../types/actions'
-import { DexTrackerState, pokedexStateSchema } from '../types/state'
+import type { DexTrackerActionFactory, DexTrackerDexActions } from '../types/actions'
+import { type DexTrackerState, pokedexStateSchema } from '../types/state'
 import { splitFullDexId } from '../utils'
 
 const dexActions: DexTrackerActionFactory<DexTrackerDexActions> = (setState, getState): DexTrackerDexActions => {

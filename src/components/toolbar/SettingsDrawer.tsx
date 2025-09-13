@@ -1,7 +1,7 @@
 import { SettingsIcon } from '@/lib/icons/actions'
 import { cn } from '@/lib/utils'
 import useDexTrackerStore from '@/stores/useDexTrackerStore'
-import DrawerMenu, { DrawerMenuProps } from '../primitives/DrawerMenu'
+import DrawerMenu, { type DrawerMenuProps } from '../primitives/DrawerMenu'
 import AppVersionItem from './actions/AppVersionItem'
 import DataDownloadJsonAction from './actions/DataDownloadJsonAction'
 import DataUploadJsonAction from './actions/DataUploadJsonAction'

@@ -1,5 +1,5 @@
 import { gamesFilteredDataset } from '@/lib/dataset/games'
-import SelectField, { OPTIONS_NO_DATA, SelectFieldPropsWithoutOptions } from './primitives/SelectField'
+import SelectField, { OPTIONS_NO_DATA, type SelectFieldPropsWithoutOptions } from './primitives/SelectField'
 
 type GameSelectFieldProps = SelectFieldPropsWithoutOptions & {
   nullable?: boolean

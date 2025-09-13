@@ -5,7 +5,7 @@ import useInfiniteScrollList from '@/lib/hooks/useInfiniteScrollList'
 import { cn } from '@/lib/utils'
 import { useCurrentDexData } from '@/stores/useCurrentDexData'
 import useDexTrackerStore from '@/stores/useDexTrackerStore'
-import { ComponentPropsWithoutRef, useRef } from 'react'
+import { type ComponentPropsWithoutRef, useRef } from 'react'
 import styles from './DexTracker.module.scss'
 import DexTrackerEntry from './DexTrackerEntry'
 

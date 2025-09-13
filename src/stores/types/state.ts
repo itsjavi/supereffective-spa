@@ -1,6 +1,6 @@
-import { TrGame, TrPokedex, TrPokedexBasicInfo } from '@/lib/dataset/types'
-import { SimplifyType as Simply } from '@/lib/utils/types'
-import { UseQueryResult } from '@tanstack/react-query'
+import type { TrGame, TrPokedex, TrPokedexBasicInfo } from '@/lib/dataset/types'
+import type { SimplifyType as Simply } from '@/lib/utils/types'
+import type { UseQueryResult } from '@tanstack/react-query'
 import { z } from 'zod'
 
 const trainerInfoStateSchema = z.object({

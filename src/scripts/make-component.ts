@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 
 function createComponentCommand(componentName: string, componentTag = 'div'): void {
   const fullComponentPath = `${process.cwd()}/src/components/${componentName}`

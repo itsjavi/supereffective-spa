@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 import styles from './FlexLabel.module.scss'
 
 type FlexLabelProps = {

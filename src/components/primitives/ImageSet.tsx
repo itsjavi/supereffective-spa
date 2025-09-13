@@ -1,5 +1,5 @@
-import { MultiFormatImage } from '@/lib/utils/types'
-import { ComponentPropsWithoutRef } from 'react'
+import type { MultiFormatImage } from '@/lib/utils/types'
+import type { ComponentPropsWithoutRef } from 'react'
 
 type ImageSetProps = {
   sources: Partial<MultiFormatImage>

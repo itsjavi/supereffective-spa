@@ -1,5 +1,5 @@
-import { ComponentPropsWithoutRef } from 'react'
-import { AppRouter } from './appRouterClass'
+import type { ComponentPropsWithoutRef } from 'react'
+import type { AppRouter } from './appRouterClass'
 
 export type PageComponentProps<RouteParamKeys extends string = string> = {
   routeParams: Partial<Record<RouteParamKeys, string | undefined>>

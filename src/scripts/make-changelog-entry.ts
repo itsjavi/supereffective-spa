@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { TrAppChangelogEntry } from '@/lib/dataset/types'
+import type { TrAppChangelogEntry } from '@/lib/dataset/types'
 // import pkg from '../../package.json'
 
 const CHANGELOG_FILE = `${process.cwd()}/public/data/changelog.min.json`

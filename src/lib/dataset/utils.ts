@@ -1,6 +1,6 @@
-import { DexTrackerOptionsState, PokedexState } from '@/stores/types/state'
+import type { DexTrackerOptionsState, PokedexState } from '@/stores/types/state'
 import { pokemonDatasetMap } from './pokemon'
-import { TrPokedexBasicInfo, TrStatefulPokedexEntry } from './types'
+import type { TrPokedexBasicInfo, TrStatefulPokedexEntry } from './types'
 
 export function splitSpeciesAndForms<State>(
   pokemon: TrStatefulPokedexEntry<State>[],

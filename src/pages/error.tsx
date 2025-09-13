@@ -1,4 +1,4 @@
-import { PageComponent } from '@/lib/router/types'
+import type { PageComponent } from '@/lib/router/types'
 
 const ErrorPage: PageComponent<'id' | 'foo'> = ({ routeParams: _, ...rest }) => {
   return (

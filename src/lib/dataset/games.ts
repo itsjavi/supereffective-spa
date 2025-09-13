@@ -1,5 +1,5 @@
 import gamesJsonexport from './data/games.min.json'
-import { TrGame } from './types'
+import type { TrGame } from './types'
 
 export const gamesDataset: TrGame[] = gamesJsonexport
 export const gamesFilteredDataset = gamesDataset

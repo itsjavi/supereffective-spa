@@ -1,9 +1,9 @@
-import { PokedexSearchableEntry } from '@/kernel/search'
+import type { PokedexSearchableEntry } from '@/kernel/search'
 import { FemaleIcon, MaleIcon, PokeballIcon, PokeballOutlineIcon, ShinyIcon } from '@/lib/icons/gamegui'
 import { cn } from '@/lib/utils'
-import { PokedexEntryState } from '@/stores/types/state'
+import type { PokedexEntryState } from '@/stores/types/state'
 import useDexTrackerStore from '@/stores/useDexTrackerStore'
-import { ComponentPropsWithRef, forwardRef, useState } from 'react'
+import { type ComponentPropsWithRef, forwardRef, useState } from 'react'
 import PokemonImg from '../PokemonImg'
 import styles from './DexTrackerEntry.module.scss'
 

@@ -1,5 +1,5 @@
 import pokemonListJson from './data/pokemon.min.json'
-import { TrPokemon, TrPokemonFlags, TrPokemonStats, TrSourcePokemon } from './types'
+import type { TrPokemon, TrPokemonFlags, TrPokemonStats, TrSourcePokemon } from './types'
 
 export const pokemonDataset: TrPokemon[] = pokemonListJson.map((pkm: TrSourcePokemon): TrPokemon => {
   if (!pkm.types[0]) {

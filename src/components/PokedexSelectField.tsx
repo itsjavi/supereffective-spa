@@ -1,8 +1,8 @@
 import { gamesFilteredDataset } from '@/lib/dataset/games'
 import SelectField, {
   OPTIONS_NO_DATA,
-  SelectFieldOption,
-  SelectFieldPropsWithoutOptions,
+  type SelectFieldOption,
+  type SelectFieldPropsWithoutOptions,
 } from './primitives/SelectField'
 
 type PokedexSelectFieldProps = SelectFieldPropsWithoutOptions & {

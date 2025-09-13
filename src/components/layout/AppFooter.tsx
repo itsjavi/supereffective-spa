@@ -1,6 +1,6 @@
 import config from '@/config'
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 import styles from './AppFooter.module.scss'
 
 type AppFooterProps = {} & ComponentPropsWithoutRef<'div'>

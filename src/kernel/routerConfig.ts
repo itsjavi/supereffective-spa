@@ -1,5 +1,5 @@
 import StatefulAppLayout from '@/components/layout/StatefulAppLayout'
-import { PageComponent, RouterPageModule, RouterPageModuleRouteMap } from '@/lib/router/types'
+import type { PageComponent, RouterPageModule, RouterPageModuleRouteMap } from '@/lib/router/types'
 import * as ErrorPage from '@/pages/error'
 import * as HomePage from '@/pages/page'
 

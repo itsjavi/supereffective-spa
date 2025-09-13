@@ -1,6 +1,6 @@
 import { MenuIcon } from '@/lib/icons/actions'
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef, useState } from 'react'
+import { type ComponentPropsWithoutRef, useState } from 'react'
 import styles from './DrawerMenu.module.scss'
 
 export type DrawerMenuProps = {

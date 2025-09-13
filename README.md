@@ -48,6 +48,7 @@ check out our main, cloud based project: [supereffective.gg](https://supereffect
 - [x] Better HTTP 404 page
 - [ ] Home dex selector should prefill the selections with your latest edited dex
 - [ ] Add a "go back home" button to all left drawers that are not in the home page
+- [ ] Use IndexedDB instead of localStorage (or [ElectricSQL](https://electric-sql.com/blog/2025/07/29/local-first-sync-with-tanstack-db)?), to have more space and better performance
 
 ## Tech Stack
 

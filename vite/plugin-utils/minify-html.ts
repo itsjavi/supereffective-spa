@@ -1,4 +1,4 @@
-import { Options as HTMLMinifierTerserOptions, minify } from 'html-minifier-terser'
+import { type Options as HTMLMinifierTerserOptions, minify } from 'html-minifier-terser'
 
 export const defaultMinifyOptions: HTMLMinifierTerserOptions = {
   removeComments: true,

@@ -1,9 +1,9 @@
 import config from '@/config'
 import { useLocalDatasetQuery } from '@/hooks/useLocalDatasetQuery'
-import { TrAppChangelogEntry } from '@/lib/dataset/types'
+import type { TrAppChangelogEntry } from '@/lib/dataset/types'
 import { GithubIcon } from '@/lib/icons/brands'
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 import TitledSection from '../primitives/TitledSection'
 import styles from './ChangelogEntries.module.scss'
 
@@ -56,8 +56,8 @@ export default function ChangelogEntries({
 
   const sortedVersionDesc = Object.keys(entriesByVersion)
     .sort((a, b) => {
-      const [aMajor, aMinor, aPatch] = a.split('.').map((n) => parseInt(n))
-      const [bMajor, bMinor, bPatch] = b.split('.').map((n) => parseInt(n))
+      const [aMajor, aMinor, aPatch] = a.split('.').map((n) => Number.parseInt(n))
+      const [bMajor, bMinor, bPatch] = b.split('.').map((n) => Number.parseInt(n))
 
       if (aMajor !== bMajor) {
         return bMajor - aMajor

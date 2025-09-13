@@ -1,12 +1,12 @@
 import fs from 'node:fs'
-import http from 'node:http'
-import { AddressInfo } from 'node:net'
+import type http from 'node:http'
+import type { AddressInfo } from 'node:net'
 import path from 'node:path'
-import express, { Express } from 'express'
-import { Options as HTMLMinifierTerserOptions, minify } from 'html-minifier-terser'
-import puppeteer, { Browser, PuppeteerLaunchOptions } from 'puppeteer'
+import express, { type Express } from 'express'
+import { type Options as HTMLMinifierTerserOptions, minify } from 'html-minifier-terser'
+import puppeteer, { type Browser, type PuppeteerLaunchOptions } from 'puppeteer'
 import type { Plugin } from 'vite'
-import { BundleSizeEnforcerOptions, enforceAssetsSize } from './plugin-utils/assets-size-enforcer'
+import { type BundleSizeEnforcerOptions, enforceAssetsSize } from './plugin-utils/assets-size-enforcer'
 import { defaultMinifyOptions } from './plugin-utils/minify-html'
 
 /*

@@ -1,4 +1,4 @@
-import { DexTrackerActions } from './actions'
-import { DexTrackerState } from './state'
+import type { DexTrackerActions } from './actions'
+import type { DexTrackerState } from './state'
 
 export type DexTrackerStore = DexTrackerState & DexTrackerActions

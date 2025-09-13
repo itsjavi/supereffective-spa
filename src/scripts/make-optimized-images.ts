@@ -1,5 +1,5 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import * as fs from 'node:fs'
+import * as path from 'node:path'
 import sharp from 'sharp'
 
 // TODO: clone the images repo or download them from the CDN,

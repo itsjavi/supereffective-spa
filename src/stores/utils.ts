@@ -1,7 +1,7 @@
 import { gamesDatasetMap } from '@/lib/dataset/games'
 import { getFirstGameForDex, pokedexBasicInfoMap } from '@/lib/dataset/pokedexes'
-import { TrGame, TrPokedexBasicInfo } from '@/lib/dataset/types'
-import { DexTrackerState } from './types/state'
+import type { TrGame, TrPokedexBasicInfo } from '@/lib/dataset/types'
+import type { DexTrackerState } from './types/state'
 
 export function summarizeDexTrackerData(state: DexTrackerState) {
   const dexCount = Object.keys(state.dexes).length

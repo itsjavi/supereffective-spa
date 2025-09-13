@@ -1,7 +1,7 @@
 import { pokemonDatasetMap } from '@/lib/dataset/pokemon'
-import { DexTrackerOptionsState, PokedexEntryState, PokedexState } from '../stores/types/state'
+import type { DexTrackerOptionsState, PokedexEntryState, PokedexState } from '../stores/types/state'
 
-import { TrPokedex, TrPokedexEntry, TrStatefulPokedexEntry } from '@/lib/dataset/types'
+import type { TrPokedex, TrPokedexEntry, TrStatefulPokedexEntry } from '@/lib/dataset/types'
 
 export type PokedexSearchableEntry = TrStatefulPokedexEntry<PokedexEntryState>
 export type PokedexSearchIndex = PokedexSearchableEntry[]

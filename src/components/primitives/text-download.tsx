@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 import Btn from './Btn'
 
 export function triggerTextDownload(content: string, filename: string, contentType = 'text/plain') {

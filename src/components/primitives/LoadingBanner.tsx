@@ -1,6 +1,6 @@
 import { PokeballIcon } from '@/lib/icons/gamegui'
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 import styles from './LoadingBanner.module.scss'
 
 type LoadingBannerProps = {} & ComponentPropsWithoutRef<'div'>

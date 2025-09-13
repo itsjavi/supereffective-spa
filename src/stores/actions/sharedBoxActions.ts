@@ -1,4 +1,4 @@
-import { DexTrackerActionFactory, DexTrackerSharedBoxActions } from '../types/actions'
+import type { DexTrackerActionFactory, DexTrackerSharedBoxActions } from '../types/actions'
 
 const DEFAULT_BOX_TITLE = 'Trade Box'
 

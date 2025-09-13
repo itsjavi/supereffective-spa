@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 import Btn from './Btn'
 import styles from './ToggleBtn.module.scss'
 

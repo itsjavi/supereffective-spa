@@ -6,8 +6,8 @@ import generalActions, { createDefaultState } from './actions/generalActions'
 import sharedBoxActions from './actions/sharedBoxActions'
 import trainerActions from './actions/trainerActions'
 
-import { DexTrackerStore } from './types'
-import { DexTrackerState } from './types/state'
+import type { DexTrackerStore } from './types'
+import type { DexTrackerState } from './types/state'
 
 const STORE_VERSION = 4
 

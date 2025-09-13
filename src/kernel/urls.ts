@@ -1,5 +1,5 @@
 import config from '@/config'
-import { MultiFormatImage } from '../lib/utils/types'
+import type { MultiFormatImage } from '../lib/utils/types'
 
 export const APP_BASE_URL = import.meta.env.BASE_URL
 export const LOCAL_IMAGES_CDN_URL = `${APP_BASE_URL}images`
@@ -27,20 +27,8 @@ export function localUrl(path?: string): string {
   return `${APP_BASE_URL}${normalizedPath}`
 }
 
-export function getDataCDNResourceUrl(filePath: string) {
-  return `${config.cdn_dataset_url}/${filePath}`
-}
-
-export function getDevDataCDNResourceUrl(filePath: string) {
-  return `http://localhost:4455/dist/data/${filePath}`
-}
-
 export function getAssetsCDNResourceUrl(filePath: string) {
   return `${config.cdn_assets_url}/${filePath}`
-}
-
-export function getDevAssetsCDNResourceUrl(filePath: string) {
-  return `http://localhost:3999/assets/${filePath}`
 }
 
 export function getDexSourceCodeUrl(dexRegion: string | undefined | null, dexId: string) {

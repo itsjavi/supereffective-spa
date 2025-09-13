@@ -1,5 +1,5 @@
 import { gamesDatasetMap, gamesFilteredDataset } from './games'
-import { TrGame, TrPokedexBasicInfoWithGameIds } from './types'
+import type { TrGame, TrPokedexBasicInfoWithGameIds } from './types'
 
 export const pokedexBasicInfoMap = createPokedexBasicInfoMap()
 

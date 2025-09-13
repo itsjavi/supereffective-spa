@@ -1,4 +1,4 @@
-import clsx, { ClassValue } from 'clsx'
+import clsx, { type ClassValue } from 'clsx'
 
 export function isClientSide(): boolean {
   return typeof window !== 'undefined' && typeof document !== 'undefined'

@@ -1,4 +1,4 @@
-import { DexTrackerActionFactory, DexTrackerFilterActions } from '../types/actions'
+import type { DexTrackerActionFactory, DexTrackerFilterActions } from '../types/actions'
 
 const filterActions: DexTrackerActionFactory<DexTrackerFilterActions> = (setState, getState) => {
   return {

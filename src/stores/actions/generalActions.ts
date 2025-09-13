@@ -1,5 +1,5 @@
-import { DexTrackerActionFactory, DexTrackerGeneralActions } from '../types/actions'
-import { DexTrackerState, dexTrackerStateSchema } from '../types/state'
+import type { DexTrackerActionFactory, DexTrackerGeneralActions } from '../types/actions'
+import { type DexTrackerState, dexTrackerStateSchema } from '../types/state'
 
 export const DEFAULT_FULL_DEX_ID = 'paldea_sv-s'
 export function createDefaultState(): DexTrackerState {

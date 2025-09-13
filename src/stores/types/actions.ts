@@ -1,4 +1,4 @@
-import { DexTrackerState, PokeboxEntryState, PokeboxState, PokedexEntryState, TrainerInfoState } from './state'
+import type { DexTrackerState, PokeboxEntryState, PokeboxState, PokedexEntryState, TrainerInfoState } from './state'
 
 export type DexTrackerGeneralActions = {
   resetData: () => void

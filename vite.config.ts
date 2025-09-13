@@ -1,6 +1,6 @@
 import path from 'node:path'
 import react from '@vitejs/plugin-react-swc'
-import { PluginOption, defineConfig } from 'vite'
+import { type PluginOption, defineConfig } from 'vite'
 import pkgJson from './package.json'
 import dataJson from './src/config.json'
 import htmlInlineAssets from './vite/vite-plugin-html-inline-assets'

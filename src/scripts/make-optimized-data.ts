@@ -1,9 +1,10 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import { getDataCDNResourceUrl } from '@/kernel/urls'
+
 import type { TrGame, TrPokedex, TrPokedexBasicInfo, TrPokedexEntry, TrSourcePokemon } from '@/lib/dataset/types'
 import type { Game, Pokedex, Pokemon } from '@supeffective/dataset'
+import fs from 'node:fs'
+import path from 'node:path'
 
+const DATASET_DIR = `${process.cwd()}/dataset`
 const PUBLIC_DEST_DIR = `${process.cwd()}/public`
 const SRC_DEST_DIR = `${process.cwd()}/src/lib/dataset/data`
 
@@ -17,15 +18,15 @@ if (!fs.existsSync(SRC_DEST_DIR)) {
 // - avoid having to fetch secondary api calls
 // - avoid data hydration loops (e.g. when we need to combine the data we have missing from many sources)
 
-const gamesDataUrl = getDataCDNResourceUrl('games.min.json') // ~32KB
-const pokedexesDataUrl = getDataCDNResourceUrl('pokedexes.min.json') // HEAVY ~1MB
-const pokemonDataUrl = getDataCDNResourceUrl('pokemon.min.json') // HEAVY ~2MB
+const gamesDataPath = path.join(DATASET_DIR, 'data/games.json')
+const pokedexesDataPath = path.join(DATASET_DIR, 'data/pokedexes.json')
+const pokemonDataPath = path.join(DATASET_DIR, 'data/pokemon.json')
 
 console.log('> Downloading and optimize data from the CDN...')
 
-const gamesSrc = (await (await fetch(gamesDataUrl)).json()) as Game[]
-const pokedexesSrc = (await (await fetch(pokedexesDataUrl)).json()) as Pokedex[]
-const pokemonSrc = (await (await fetch(pokemonDataUrl)).json()) as Pokemon[]
+const gamesSrc = (JSON.parse(fs.readFileSync(gamesDataPath, 'utf8'))) as Game[]
+const pokedexesSrc = (JSON.parse(fs.readFileSync(pokedexesDataPath, 'utf8'))) as Pokedex[]
+const pokemonSrc = (JSON.parse(fs.readFileSync(pokemonDataPath, 'utf8'))) as Pokemon[]
 
 const pokemonSrcMap: Record<string, Pokemon> = pokemonSrc.reduce(
   (acc, pkm) => {

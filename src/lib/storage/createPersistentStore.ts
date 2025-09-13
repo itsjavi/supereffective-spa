@@ -1,4 +1,4 @@
-import { StateCreator, create } from 'zustand'
+import { type StateCreator, create } from 'zustand'
 import { createJSONStorage, devtools, persist } from 'zustand/middleware'
 import createDebouncedStorage from './createDebouncedStorage'
 

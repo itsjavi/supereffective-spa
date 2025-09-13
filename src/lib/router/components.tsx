@@ -13,7 +13,6 @@ export function RouterLink({ to, children, ...rest }: RouterLinkProps) {
   const isCurrent = currentRoute?.basePath === to
 
   return (
-    // biome-ignore lint/a11y/useValidAnchor: this should also work without JS
     <a
       href={to}
       data-current={isCurrent}

@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef, useId } from 'react'
+import { type ComponentPropsWithoutRef, useId } from 'react'
 import styles from './SelectField.module.scss'
 
 export type SelectFieldOption = { value: string; label?: string }

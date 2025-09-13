@@ -2,7 +2,7 @@
 
 A simple, lightweight, and client-based Pokédex Tracker.
 
-Brought to you by the [SuperEffective](https://supereffective.gg/) team.
+Brought to you by the [PokéPC](https://pokepc.net) team (formerly SuperEffective.gg).
 
 ![Demo](public/images/twitter-card.jpg)
 
@@ -33,7 +33,7 @@ locally in your browser's storage. This means you don't need a login, you can us
 worry about your data being stored in an external server.
 
 This webapp is just a Pokédex tracker, not a Living Dex Box Organizer. If you're looking for a Living Dex Box Organizer
-check out our main, cloud based project: [supereffective.gg](https://supereffective.gg/).
+check out our main, cloud based project: [pokepc.net](https://pokepc.net/).
 
 ## TODO (dev)
 
@@ -48,7 +48,9 @@ check out our main, cloud based project: [supereffective.gg](https://supereffect
 - [x] Better HTTP 404 page
 - [ ] Home dex selector should prefill the selections with your latest edited dex
 - [ ] Add a "go back home" button to all left drawers that are not in the home page
-- [ ] Use IndexedDB instead of localStorage (or [ElectricSQL](https://electric-sql.com/blog/2025/07/29/local-first-sync-with-tanstack-db)?), to have more space and better performance
+- [ ] Use IndexedDB instead of localStorage (or
+      [ElectricSQL](https://electric-sql.com/blog/2025/07/29/local-first-sync-with-tanstack-db)?), to have more space
+      and better performance
 
 ## Tech Stack
 

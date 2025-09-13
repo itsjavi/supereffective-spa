@@ -101,7 +101,7 @@ export default function DexTracker({ className, infiniteScrollSize = 25, ...prop
             <br />
             <br />
             You can support this project by contributing to{' '}
-            <a href={getDexSourceCodeUrl(dexRegion, dexId)} target="_blank" rel="noreferrer">
+            <a href={getDexSourceCodeUrl()} target="_blank" rel="noreferrer">
               the dataset repository
             </a>
             {''}, adding the missing data.

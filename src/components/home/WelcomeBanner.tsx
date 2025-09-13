@@ -39,10 +39,11 @@ function WelcomeBanner() {
         <article>
           <p>
             Developed by the creator of {/* biome-ignore lint/a11y/noBlankTarget: <explanation> */}
-            <a href="https://supereffective.gg" target="_blank">
-              SuperEffective.gg
-            </a>
-            , a twin site that offers Living Dex Box Organization features, stored in the cloud.
+            <a href="https://pokepc.net" target="_blank">
+              PokéPC
+            </a>{' '}
+            (formerly SuperEffective.gg), a twin site that offers Living Dex Box Organization features, stored in the
+            cloud.
           </p>
         </article>
         <article>

@@ -6,15 +6,11 @@
   "window_title": "SuperEffective - Pokédex Tracker, Living Dex Organizer and Shiny Hunter Dashboard",
   "webapp_name": "SuperEffective",
   "webapp_short_name": "SuperEffective",
-  "meta_description": "Online Pokédex Tracker that saves your progress locally, without the need for an account. Developed by the creator of SuperEffective.gg.",
+  "meta_description": "Online Pokédex Tracker that saves your progress locally, without the need for an account. Developed by the creator of pokepc.net and supereffective.gg.",
 
-  "cdn_base_url": "https://cdn.supeffective.com",
-  "cdn_dataset_url": "https://cdn.supeffective.com/dataset",
-  "cdn_assets_url": "https://cdn.supeffective.com/assets",
-  "github_url": "https://github.com/supeffective/supeffective.com",
+  "github_url": "https://github.com/itsjavi/supereffective-local",
   "patreon_url": "https://www.patreon.com/supereffective",
   "discord_url": "https://discord.gg/3fRXQFtrkN",
 
-  "twitter_site": "supereffectiv",
-  "twitter_creator": "itsjavidotcom"
+  "twitter_site": "pokepcnet"
 }

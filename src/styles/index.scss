@@ -7,3 +7,29 @@
 @import url('./components.scss');
 @import url('./utilities.scss');
 @import url('./mini-tailwind.scss');
+
+.deprecation-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 8ch;
+  background: black;
+  color: gold;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  & p {
+    margin: 0;
+  }
+
+  & a {
+    color: inherit;
+  }
+}

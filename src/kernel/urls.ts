@@ -7,16 +7,14 @@ export const LOCAL_IMAGES_CDN_URL = `${APP_BASE_URL}images`
 export function getGameCoverImageUrls(gameId: string): MultiFormatImage {
   const avifSrc = `${LOCAL_IMAGES_CDN_URL}/avif/games/${gameId}.avif`
   const webpSrc = `${LOCAL_IMAGES_CDN_URL}/webp/games/${gameId}.webp`
-  const fallbackSrc = `${config.cdn_assets_url}/images/games/tiles/${gameId}.jpg`
-  return { webpSrc, avifSrc, fallbackSrc }
+  return { webpSrc, avifSrc, fallbackSrc: webpSrc }
 }
 
 export function getPokemonImageUrls(pokemonId: string, shiny: boolean): MultiFormatImage {
   const shinyPath = shiny ? 'shiny' : 'regular'
   const avifSrc = `${LOCAL_IMAGES_CDN_URL}/avif/pokemon/${shinyPath}/${pokemonId}.avif`
   const webpSrc = `${LOCAL_IMAGES_CDN_URL}/webp/pokemon/${shinyPath}/${pokemonId}.webp`
-  const fallbackSrc = `${config.cdn_assets_url}/images/pokemon/home3d-icon/${shinyPath}/${pokemonId}.png`
-  return { webpSrc, avifSrc, fallbackSrc }
+  return { webpSrc, avifSrc, fallbackSrc: webpSrc }
 }
 
 export function localUrl(path?: string): string {
@@ -27,13 +25,6 @@ export function localUrl(path?: string): string {
   return `${APP_BASE_URL}${normalizedPath}`
 }
 
-export function getAssetsCDNResourceUrl(filePath: string) {
-  return `${config.cdn_assets_url}/${filePath}`
-}
-
-export function getDexSourceCodeUrl(dexRegion: string | undefined | null, dexId: string) {
-  if (!dexRegion) {
-    return `https://github.com/supeffective/dataset/blob/main/data/pokedexes/${dexId}.json`
-  }
-  return `https://github.com/supeffective/dataset/blob/main/data/pokedexes/${dexRegion}/${dexId}.json`
+export function getDexSourceCodeUrl() {
+  return 'https://github.com/itsjavi/supereffective-local/blob/main/dataset/pokedexes.json'
 }

@@ -52,7 +52,7 @@ export default function DexSwitchDrawer({ className, children, ...props }: Drawe
       {children}
       <hr />
       <div className={styles.links}>
-        <a href={getDexSourceCodeUrl(currentDex.region, currentDex.id)} target="_blank" rel="noreferrer">
+        <a href={getDexSourceCodeUrl()} target="_blank" rel="noreferrer">
           <GithubIcon />
           <span>Edit source code</span>
         </a>

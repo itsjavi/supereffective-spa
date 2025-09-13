@@ -1,7 +1,7 @@
-import pokemonListJson from './data/pokemon.min.json'
+import pokemonJsonExport from './data/pokemon.min.json'
 import type { TrPokemon, TrPokemonFlags, TrPokemonStats, TrSourcePokemon } from './types'
 
-export const pokemonDataset: TrPokemon[] = pokemonListJson.map((pkm: TrSourcePokemon): TrPokemon => {
+export const pokemonDataset: TrPokemon[] = (pokemonJsonExport as any).map((pkm: TrSourcePokemon): TrPokemon => {
   if (!pkm.types[0]) {
     throw new Error(`Pokemon first type for ${pkm.id} has a nullish value`)
   }

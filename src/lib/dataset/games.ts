@@ -1,7 +1,7 @@
 import gamesJsonexport from './data/games.min.json'
 import type { TrGame } from './types'
 
-export const gamesDataset: TrGame[] = gamesJsonexport
+export const gamesDataset: TrGame[] = gamesJsonexport as any
 export const gamesFilteredDataset = gamesDataset
   .filter((game) => game.type === 'game' || game.type === 'dlc')
   .filter((game) => game.pokedexes.length > 0)

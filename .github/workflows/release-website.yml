@@ -24,7 +24,7 @@ jobs:
     name: Build the project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0 # needed to be able to reference prev commits and refs
 
@@ -35,7 +35,7 @@ jobs:
         uses: ./.github/actions/check-quality
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
       - name: Build the project
         run: |
@@ -48,7 +48,7 @@ jobs:
           ls -la ./_site
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
 
   deploy:
     name: Deploy to GitHub Pages
@@ -60,4 +60,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

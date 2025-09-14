@@ -14,17 +14,17 @@ jobs:
       matrix:
         platform:
           - macos-12 # with Intel processor
-          - macos-14 # with M1 processor
-          - ubuntu-20.04
+          - macos-15 # with M1 processor
+          - ubuntu-24.04
           - windows-latest
     runs-on: ${{ matrix.platform }}
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install dependencies (ubuntu only)
-        if: matrix.platform == 'ubuntu-20.04'
+        if: matrix.platform == 'ubuntu-24.04'
         # You can remove libayatana-appindicator3-dev if you don't use the system tray feature.
         run: |
           sudo apt-get update

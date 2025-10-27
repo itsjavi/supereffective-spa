@@ -1,5 +1,7 @@
 # SuperEffective Pokédex Tracker
 
+> NOTE: this project is not maintained anymore, since all our focus is on PokéPC.
+
 A simple, lightweight, and client-based Pokédex Tracker.
 
 Brought to you by the [PokéPC](https://pokepc.net) team (formerly SuperEffective.gg).

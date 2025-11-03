@@ -1,4 +1,3 @@
-import config from '@/config'
 import type { MultiFormatImage } from '../lib/utils/types'
 
 export const APP_BASE_URL = import.meta.env.BASE_URL
@@ -26,5 +25,5 @@ export function localUrl(path?: string): string {
 }
 
 export function getDexSourceCodeUrl() {
-  return 'https://github.com/itsjavi/supereffective-local/blob/main/dataset/pokedexes.json'
+  return 'https://github.com/itsjavi/supereffective-spa/blob/main/dataset/pokedexes.json'
 }

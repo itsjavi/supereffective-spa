@@ -1,4 +1,5 @@
 import config from '@/config'
+import { localUrl } from '@/kernel/urls'
 import { HeartHandshakeIcon } from '@/lib/icons/actions'
 import { DiscordIcon, GithubIcon } from '@/lib/icons/brands'
 import { RouterLink } from '@/lib/router'
@@ -14,7 +15,7 @@ type AppHeaderProps = {
 export default function AppHeader({ className, ...props }: AppHeaderProps) {
   return (
     <header className={cn(styles.header, className)} {...props}>
-      <RouterLink className={styles.title} to={'/'}>
+      <RouterLink className={styles.title} to={localUrl('/')}>
         <img src={appLogo} alt="" />
         <h1>{config.title}</h1>
       </RouterLink>

@@ -24,6 +24,14 @@ export function localUrl(path?: string): string {
   return `${APP_BASE_URL}${normalizedPath}`
 }
 
+export function localHashUrl(path?: string): string {
+  if (!path) {
+    return `${APP_BASE_URL}#`
+  }
+  const normalizedPath = path.replace(/^\//, '')
+  return `${APP_BASE_URL}#/${normalizedPath}`
+}
+
 export function getDexSourceCodeUrl() {
   return 'https://github.com/itsjavi/supereffective-spa/blob/main/dataset/pokedexes.json'
 }
